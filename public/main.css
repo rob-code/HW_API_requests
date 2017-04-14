@@ -36,9 +36,16 @@
 
 .title {
 padding-top: 3px;
-font-size: .9em;
+font-size: 1.1em;
 font-weight: normal;
+padding-top: 3px;
+padding-bottom: 3px;
+}
 
+.hr{
+  height: 1px;
+  color: grey;
+  border: 0;
 }
 
 
@@ -53,14 +60,25 @@ font-weight: normal;
 
 }
 
-
 .column2{
-  width: 400px;
+  width: 50%;
+  padding-left: 5px;
 }
 
+.story-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
 
 .story-image {
+width: 100%;
+height: auto;
+}
 
-width: 50px;
-height: 50px;
+.story-text{
+  font-size: 1.4em;
+  font-weight: normal;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }

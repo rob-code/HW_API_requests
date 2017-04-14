@@ -11,6 +11,7 @@ var app = function() {
 
   mostPopularStories.getData(function(stories){
 
+    mostPopularStories.save(stories);
     storyTitleView.render(stories);
     mainStoryView.render(stories)
 
