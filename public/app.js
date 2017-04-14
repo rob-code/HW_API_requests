@@ -6,9 +6,13 @@ var app = function() {
 
   var storyTitleView = new StoryTitleView(document.querySelector('#story-titles'));
 
+  var mainStoryView = new MainStoryView(document.querySelector('#stories'))
+
+
   mostPopularStories.getData(function(stories){
 
     storyTitleView.render(stories);
+    mainStoryView.render(stories)
 
   })
 
