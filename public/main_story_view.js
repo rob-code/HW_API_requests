@@ -17,10 +17,13 @@ render: function(stories){
     info.innerText = "Section: " + story.section + " | " + story.byline + " | " + story.published_date;
     info.className = "story-info";
 
+    //make the image clickable
+    var imageLink = document.createElement('a');
+    imageLink.href = story.url;
     var image = document.createElement('img');
     image.src = story.media[0]['media-metadata'][2].url;
     image.className = "story-image";
-    //make image clickable to the story
+    imageLink.appendChild(image);
 
     var text = document.createElement('div');
     text.innerText = story.abstract; 
@@ -31,7 +34,7 @@ render: function(stories){
 
     this.storyElement.appendChild(title);
     this.storyElement.appendChild(info);
-    this.storyElement.appendChild(image);
+    this.storyElement.appendChild(imageLink);
     this.storyElement.appendChild(text);
     this.storyElement.appendChild(hr);
 
