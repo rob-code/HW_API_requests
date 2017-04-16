@@ -29,7 +29,7 @@
 }
 
 .column1{
-  width: 20%;
+  width: 25%;
   text-align: left;
   background-color: orange;
   padding-top: 10px;
@@ -62,7 +62,7 @@
 }
 
 .column2{
-  width: 60%;
+  width: 50%;
   padding-left: 5px;
 }
 
@@ -94,7 +94,7 @@ a.story-title {
 }
 
 .column3{
-  width: 20%;
+  width: 25%;
   padding-left: 5px;
   background-color: lightblue;
   text-align: left;
@@ -120,6 +120,7 @@ a.story-title {
 /*story occurrences table*/
 .table-data-container{
   width: 100%;
+  padding-top: 10px;
 }
 
 .row-header {
@@ -133,8 +134,10 @@ a.story-title {
 
 .col2 {
   width: 30%;
-  margin: auto;
-
+  text-align: center;
+/*  margin: auto;
+  display: block;
+*/
 }
 
 .cell1{
@@ -143,8 +146,9 @@ a.story-title {
 
 .cell2{
   width: 30%;
-  margin: auto;
-  display: block; 
+  text-align: center;
+/*  margin: auto;
+  display: block; */
 }
 
 

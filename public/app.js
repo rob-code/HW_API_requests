@@ -1,4 +1,4 @@
-//Here's your API Key for the Most Popular and Geographic API: 0ef3cb7d56014cf4949193c6ad33766f
+//API Key for the Most Popular and Geographic API: 0ef3cb7d56014cf4949193c6ad33766f
 
 var app = function() {
 
@@ -11,8 +11,6 @@ var app = function() {
 
   mostPopularStories.getData(function(stories){
 
-    console.log(stories)
-
     //mostPopularStories.save(stories);
     storyTitleView.render(stories);
     mainStoryView.render(stories);
@@ -22,14 +20,7 @@ var app = function() {
     chartData = storyChartAnalysis.getOccurrencesArray();
   
     var occurrenceChartView = new OccurrenceChartView(document.querySelector('#occurrence-chart'), chartData, document.querySelector('#occurrence-table'));
-
   })
-
-
-
-
-
-
 
 }
 window.onload = app;
