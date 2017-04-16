@@ -6,16 +6,25 @@ var app = function() {
 
   var storyTitleView = new StoryTitleView(document.querySelector('#story-titles'));
 
-  var mainStoryView = new MainStoryView(document.querySelector('#stories'))
-
+  var mainStoryView = new MainStoryView(document.querySelector('#stories'));
+  var storyChartAnalysis = new StoryChartAnalysis();
 
   mostPopularStories.getData(function(stories){
 
+    console.log(stories)
+
     //mostPopularStories.save(stories);
     storyTitleView.render(stories);
-    mainStoryView.render(stories)
+    mainStoryView.render(stories);
+
+    var chartData = {};
+    chartData = storyChartAnalysis.getOccurrencesArray(stories);
+    console.log(chartData);
+
 
   })
+
+
 
 
 

@@ -25,8 +25,6 @@
   flex-direction: row;
   align-items: left;
   justify-content: left;
-/*  padding-left: 5px;
-  padding-right: 5px;*/
   padding-top: 10px;
 }
 
@@ -98,11 +96,22 @@ a.story-title {
 .column3{
   width: 20%;
   padding-left: 5px;
-  background-color: blue;
+  background-color: lightblue;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 
 .column3-wrapper{
   padding-left: 3px;
   padding-right: 3px;
+
+}
+
+.column3-header{
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 10px;
 
 }

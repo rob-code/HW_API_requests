@@ -9,7 +9,6 @@ MostPopularStories.prototype = {
   getData: function (callback) {
     
     this.stories = JSON.parse(localStorage.getItem('storyStore')) || [];
-    console.log("stories" + this.stories)
     callback(this.stories)
 
 
@@ -18,22 +17,17 @@ MostPopularStories.prototype = {
     
 
 
-    request.onload = function(){    
+    // request.onload = function(){    
 
-      this.stories = JSON.parse(localStorage.getItem('storyStore')) || [];
-      console.log("stories" + this.stories)
-      callback(this.stories)
+    //   // if (request.status === 200){
+    //   //     var jsonString = request.responseText; 
+    //   //     this.stories = JSON.parse(jsonString);
+    //   //     callback(this.stories);
+    //   //   }
+    //   // }.bind(this); 
 
-
-      // if (request.status === 200){
-      //     var jsonString = request.responseText; 
-      //     this.stories = JSON.parse(jsonString);
-      //     callback(this.stories);
-      //   }
-      // }.bind(this); 
-
-      // request.send();        //trigger the request, all the onload stuff tell JS what to do when the data is returned. ie its run when onload occurs
-    }.bind(this)
+    //   // request.send();        //trigger the request, all the onload stuff tell JS what to do when the data is returned. ie its run when onload occurs
+    // }.bind(this)
     },
 
     save: function(stories){

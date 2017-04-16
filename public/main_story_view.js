@@ -5,7 +5,6 @@ var MainStoryView = function(storyElement){
 MainStoryView.prototype = {
 
 render: function(stories){
-  console.log(stories)
 
   stories.results.forEach(function(story){
     var title = document.createElement('a');
