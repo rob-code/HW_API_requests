@@ -1,14 +1,14 @@
-var StoryChartAnalysis = function(){
-
+var StoryChartAnalysis = function(stories){
+this.stories = stories;
 }
 
 StoryChartAnalysis.prototype = {
 
-  getOccurrencesArray: function(stories){
+  getOccurrencesArray: function(){
 
     var storyOccurrences = new Object(null);
 
-    stories.results.forEach(function(story){
+    this.stories.results.forEach(function(story){
 
       var item = story.section;
 

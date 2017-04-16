@@ -7,7 +7,7 @@ var app = function() {
   var storyTitleView = new StoryTitleView(document.querySelector('#story-titles'));
 
   var mainStoryView = new MainStoryView(document.querySelector('#stories'));
-  var storyChartAnalysis = new StoryChartAnalysis();
+
 
   mostPopularStories.getData(function(stories){
 
@@ -18,9 +18,10 @@ var app = function() {
     mainStoryView.render(stories);
 
     var chartData = {};
-    chartData = storyChartAnalysis.getOccurrencesArray(stories);
-    console.log(chartData);
-
+    var storyChartAnalysis = new StoryChartAnalysis(stories);
+    chartData = storyChartAnalysis.getOccurrencesArray();
+  
+    var occurrenceChartView = new OccurrenceChartView(document.querySelector('#occurrence-chart'), chartData);
 
   })
 
