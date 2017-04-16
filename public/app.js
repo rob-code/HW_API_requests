@@ -21,7 +21,7 @@ var app = function() {
     var storyChartAnalysis = new StoryChartAnalysis(stories);
     chartData = storyChartAnalysis.getOccurrencesArray();
   
-    var occurrenceChartView = new OccurrenceChartView(document.querySelector('#occurrence-chart'), chartData);
+    var occurrenceChartView = new OccurrenceChartView(document.querySelector('#occurrence-chart'), chartData, document.querySelector('#occurrence-table'));
 
   })
 

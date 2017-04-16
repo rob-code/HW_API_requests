@@ -115,3 +115,37 @@ a.story-title {
   padding-bottom: 10px;
 
 }
+
+
+/*story occurrences table*/
+.table-data-container{
+  width: 100%;
+}
+
+.row-header {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.col1 {
+  width: 70%;
+}
+
+.col2 {
+  width: 30%;
+  margin: auto;
+
+}
+
+.cell1{
+  width: 70%;
+}
+
+.cell2{
+  width: 30%;
+  margin: auto;
+  display: block; 
+}
+
+
+
