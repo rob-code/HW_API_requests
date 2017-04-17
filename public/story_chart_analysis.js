@@ -1,5 +1,8 @@
 var StoryChartAnalysis = function(stories){
 this.stories = stories;
+
+console.log("here " + this.stories)
+
 }
 
 StoryChartAnalysis.prototype = {
@@ -20,7 +23,11 @@ StoryChartAnalysis.prototype = {
       }
     });
 
+    console.log(storyOccurrences);
+
     return storyOccurrences;
+
+
 
   }
 

@@ -18,7 +18,7 @@ var app = function() {
     var chartData = {};
     var storyChartAnalysis = new StoryChartAnalysis(stories);
     chartData = storyChartAnalysis.getOccurrencesArray();
-  
+
     var occurrenceChartView = new OccurrenceChartView(document.querySelector('#occurrence-chart'), chartData, document.querySelector('#occurrence-table'));
   })
 

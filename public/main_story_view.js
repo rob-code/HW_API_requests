@@ -6,10 +6,13 @@ MainStoryView.prototype = {
 
 render: function(stories){
 
+
+
   stories.results.forEach(function(story){
+
     var title = document.createElement('a');
     title.innerText = story.title;
-    title.href = story.url
+    title.href = story.url;
     title.className = "story-title";
 
     var info = document.createElement('div');
@@ -20,7 +23,15 @@ render: function(stories){
     var imageLink = document.createElement('a');
     imageLink.href = story.url;
     var image = document.createElement('img');
-    image.src = story.media[0]['media-metadata'][2].url;
+
+    if(story.media[0]){
+        image.src = story.media[0]['media-metadata'][2].url;
+        
+    }
+
+
+    console.log(image.src)
+
     image.className = "story-image";
     imageLink.appendChild(image);
 
